@@ -5,8 +5,8 @@ import traceback
 from time import sleep
 
 # establish serial connection with arduino
-ser = serial.Serial('/dev/ttyACM0', 9600)
-url = "url/data"
+ser = serial.Serial('/dev/cu.usbmodem141401', 9600)
+url = "http://localhost:3000/data"
 
 while True:
 	try:
